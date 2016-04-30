@@ -48,182 +48,259 @@ table {
 }
 
 
+/* Custom Styles*/
 
-/* custom styles*/
-
+/*green #00a84f
+orange #f37735
+gray #e8e8e7
+*/
 
 body{
   font-family: 'Open Sans', sans-serif;
-}
-
-ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav{
-  background: green;
-  padding: 20px;
-  text-align: center;
-}
-nav a{
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1{
   font-family: 'Fjalla One', sans-serif;
-  /*color: white;*/
-  font-size: 48px;
+  color: white;
+  font-size: 60px;
   text-transform: uppercase;
+}
+
+h2{
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 h3{
   font-family: 'Roboto Slab', serif;
-  margin: 0 0 20px 0;
-  font-size: 38px;
-  color: green;
+  color: #00a84f;
   text-transform: uppercase;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 h4{
-  margin: 15px 0;
-  font-family: 'Fjalla One', sans-serif;
-  text-transform: uppercase;
-  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
 h5{
-  margin: 0;
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+header{
+  background: #00a84f;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.hero{
+  /*background-color: purple;*/
+  background-image: url(images/austin.jpg);
+  background-position: center center;
+  text-align: center;
+  background-size: cover;
+  min-height: 400px;
+  position: relative;
+}
+
+.hero__content{
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right:0;
+}
+
+.hero__content *{
+  padding-bottom: 15px;
+}
+
+.team{
+  padding: 50px 0;
+  text-align: center;
+}
+
+.team__content{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.team__content img{
+  max-width: 150px;
+  display: inline-block;
+  margin-right: 25px;
+  width: 30%;
+}
+
+.bio{
+  margin: 30px 0;
 }
 
 p{
   font-size: 14px;
+  line-height: 1.5;
+  margin-top: 15px;
 }
 
-section{
-  text-align: center;
-}
-
-.orange_button{
-  background: orange;
-  color: white;
-  font-family: 'Fjalla One', sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px;
-  border: none;
-  font-size: 18px;
-  letter-spacing: 1px;
+.bio__text{
   display: inline-block;
-}
-
-.orange_button:hover{
-  background-color: darkorange;
-}
-
-.hero{
-  min-height: 400px;
-  position: relative;
-  background: rosybrown;
-}
-
-.hero__text{
-  position: absolute;
-  top: 25%;
-  left: 0;
-  right: 0;
-}
-
-#howdy{
-  width: 150px;
-}
-
-#texas{
-  width: 90px;
-}
-section{
-  padding: 40px 0;
-}
-
-p{
-  line-height: 1.4;
-}
-
-.team__bio{
-  width: 70%;
-  margin: 30px auto;
-}
-
-.team__bio img{
-  width: 150px;
-  display: inline-block;
+  width: 60%;
   text-align: left;
   vertical-align: top;
 }
 
-.team__text{
+.orange_button{
+  text-transform: uppercase;
+  color: white;
+  background: #f37735;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 11px 19px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
   display: inline-block;
-  width: 70%;
-  text-align: left;
-  margin-left: 25px;
+  font-weight: 600;
+  width: 150px;
 }
 
-.team__text h4{
-  margin-top: 0;
+.orange_button:hover{
+  background: darkorange;
 }
 
 .tidbits{
-  background: #eee;
-  padding: 30px 0;
+  background-color: #e8e8e7;
+  text-align: center;
+  padding: 50px 0;
 }
 
-.tidbits_container{
-  width: 80%;
+.tidbits__container{
+  width: 85%;
   margin: 0 auto;
 }
 
 .tidbit{
-  width: 28%;
+  width: 30%;
   display: inline-block;
+  margin: 0 10px;
   text-align: left;
-  margin: 15px;
 }
 
 .tidbit img{
   width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact{
+  text-align: center;
+  padding: 40px 0;
 }
 
 form{
+  width: 50%;
   margin: 0 auto;
-  width: 45%;
 }
 
 input, textarea{
-  border: 2px solid green;
-  display: block;
   width: 100%;
-  padding: 12px;
+  border: 2px solid #00a84f;
   margin-bottom: 15px;
+  padding: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 
+footer{
+  background-color: black;
+}
+
+.social_media{
+  padding: 8px;
+  text-align: center;
+}
+
+.social_media a{
+  display: inline-block;
+  margin: 0 10px;
+}
+.social_media a img{
+  height: 35px;
+  -webkit-filter: brightness(0) invert();
+  filter: brightness(0) invert();
+}
+.social_media a img:hover{
+  filter: none;
+  -webkit-filter: none;
+}
+
+
+
 /*mobile*/
-@media  (max-width: 880px){
 
-  section{
-    padding: 30px 15px;
+
+@media  (max-width: 800px){
+
+  h1{ font-size: 40px; }
+  h2{ font-size: 30px; }
+
+  .hero{
+    min-height: 300px;
   }
 
-  .hero__text{
-    top: 14%;
+  .hero__content{
+    top: 2%;
   }
+
+  .hero__content img{ max-width: 135px; }
+
+  .team__content, .tidbits__container{
+    width: auto;
+    padding: 0 15px;
+  }
+
+  .tidbit{
+    width: 100%;
+    display: block;
+  }
+
+  .tidbit img{
+    width: 30%;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  .tidbit__text{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  form{
+    width: 80%;
+  }
+}
+
+@media (max-width: 415px){
+  #texas{
+    display: none;
+  }
+
+  .hero__content{
+    top: 8%;
+  }
+
 }
