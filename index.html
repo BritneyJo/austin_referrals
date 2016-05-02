@@ -21,26 +21,22 @@
 
 </section>
 
-<section class="team">
-  <h3>Meet the Team</h3>
-  <h4>Realtor & Broker from Texas</h4>
-  <div class="team__content">
-    <div class="bio">
-      <img src="images/headshot.png" alt="">
-      <div class="bio__text">
-        <h5>Sam Archer</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-    <div class="bio">
-      <img src="images/headshot.png" alt="">
-      <div class="bio__text">
-        <h5>Adam Styer</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-    <a href="#" class="orange_button">Testimonials</a>
-  </div>
+<section class="contact">
+  <h3>Contact Us</h3>
+  <h4>Fill out the form below or call us directly: <a href="tel:555.555.5555" id="phone">555.555.5555</a></h4>
+  <form action="https://formspree.io/me@britneyjo.com"
+      method="POST">
+    <input type="hidden" name="_subject" value="New Referral!" />
+    <!-- <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" /> -->
+    <input name="Your Name" placeholder="Your Name" type="text"></input>
+    <input name="_replyto" placeholder="Your Email" type="email"></input>
+    <input name="Client's Name" placeholder="Client's Name" type="text"></input>
+    <input name="Client's Email" placeholder="Client's Email" type="email"></input>
+    <textarea name="Details about Client" placeholder="Tell us about your client:" rows="10"></textarea>
+    <button type="submit" class="orange_button">Submit</button>
+    <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+    <input type="text" name="_gotcha" style="display:none" />
+  </form>
 </section>
 
 <section class="tidbits">
@@ -71,24 +67,33 @@
   </div>
 </section>
 
-<section class="contact">
-  <h3>Contact Us</h3>
-  <h4>Fill out the form below or call us directly: 555.555.5555</h4>
-  <form>
-    <input placeholder="Your Name"></input>
-    <input placeholder="Your Contact"></input>
-    <input placeholder="Client's Name"></input>
-    <input placeholder="Client's Contact"></input>
-    <textarea placeholder="Tell us about your client:" rows="10"></textarea>
-    <button type="submit" class="orange_button">Submit</button>
-  </form>
+<section class="team">
+  <h3>Meet the Team</h3>
+  <h4>Realtor & Broker from Texas</h4>
+  <div class="team__content">
+    <div class="bio">
+      <img src="images/headshot.png" alt="">
+      <div class="bio__text">
+        <h5>Sam Archer</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <div class="bio">
+      <img src="images/headshot.png" alt="">
+      <div class="bio__text">
+        <h5>Adam Styer</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <a href="#" class="orange_button">Testimonials</a>
+  </div>
 </section>
 
 <footer>
   <div class="social_media">
-    <a href="#"><img src="images/fb.png" alt="facebook"></a>
-    <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
-    <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+    <a href="#" target="_blank"><img src="images/fb.png" alt="facebook"></a>
+    <a href="#" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+    <a href="#" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
   </div>
 </footer>
 </body>

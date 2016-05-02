@@ -207,6 +207,11 @@ p{
   padding: 40px 0;
 }
 
+#phone{
+  text-decoration: none;
+  color: black;
+}
+
 form{
   width: 50%;
   margin: 0 auto;
