@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -31,9 +31,12 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
-ol, ul {
-  list-style: none;
+
+li{
+  font-size: 14px;
+  line-height: 1.5;
 }
+
 blockquote, q {
   quotes: none;
 }
@@ -97,16 +100,7 @@ h5{
   text-transform: uppercase;
 }
 
-header{
-  background: #00a84f;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-
 .hero{
-  /*background-color: purple;*/
   background-image: url(images/austin.jpg);
   background-position: center center;
   text-align: center;
@@ -126,6 +120,41 @@ header{
   padding-bottom: 15px;
 }
 
+.contact div{
+  display: inline-block;
+}
+
+.about{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact_form{
+  text-align: center;
+  padding: 40px 0;
+  width: 58%;
+}
+
+#phone{
+  text-decoration: none;
+  color: black;
+}
+
+form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+input, textarea{
+  width: 100%;
+  border: 2px solid #00a84f;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+
 .team{
   padding: 50px 0;
   text-align: center;
@@ -138,13 +167,14 @@ header{
 
 .team__content img{
   max-width: 150px;
-  display: inline-block;
+  display: inline;
   margin-right: 25px;
-  width: 30%;
+  float: left;
 }
 
 .bio{
   margin: 30px 0;
+  text-align: left;
 }
 
 p{
@@ -154,10 +184,13 @@ p{
 }
 
 .bio__text{
-  display: inline-block;
-  width: 60%;
+  display: inline;
   text-align: left;
   vertical-align: top;
+}
+
+.more_text{
+  display: none;
 }
 
 .orange_button{
@@ -195,35 +228,13 @@ p{
   display: inline-block;
   margin: 0 10px;
   text-align: left;
+  vertical-align: top;
 }
 
 .tidbit img{
   width: 100%;
   margin-bottom: 20px;
-}
-
-.contact{
-  text-align: center;
-  padding: 40px 0;
-}
-
-#phone{
-  text-decoration: none;
-  color: black;
-}
-
-form{
-  width: 50%;
-  margin: 0 auto;
-}
-
-input, textarea{
-  width: 100%;
-  border: 2px solid #00a84f;
-  margin-bottom: 15px;
-  padding: 20px;
-  font-size: 14px;
-  box-sizing: border-box;
+  min-height: 350px;
 }
 
 
