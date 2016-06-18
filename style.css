@@ -91,7 +91,7 @@ h3{
 
 h4{
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 h5{
@@ -120,28 +120,25 @@ h5{
   padding-bottom: 15px;
 }
 
-.contact div{
-  display: inline-block;
-}
-
-.about{
-  width: 40%;
-  margin: 0 auto;
-}
-
-.contact_form{
+.contact{
   text-align: center;
-  padding: 40px 0;
-  width: 58%;
+  padding: 50px 0;
+}
+.contact h4{
+  margin-bottom: 15px;
 }
 
+.contact p{
+  width: 50%;
+  margin: 0 auto 30px;
+}
 #phone{
   text-decoration: none;
   color: black;
 }
 
 form{
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -191,6 +188,14 @@ p{
 
 .more_text{
   display: none;
+}
+
+.read_more{
+  color: #00a84f;
+}
+
+.read_more:hover{
+  font-weight: bold;
 }
 
 .orange_button{
