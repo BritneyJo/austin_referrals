@@ -129,9 +129,10 @@ h5{
 }
 
 .contact p{
-  width: 50%;
+  width: 55%;
   margin: 0 auto 30px;
 }
+
 #phone{
   text-decoration: none;
   color: black;
@@ -315,13 +316,25 @@ footer{
   }
 }
 
-@media (max-width: 415px){
+@media (max-width: 600px){
   #texas{
     display: none;
   }
 
   .hero__content{
     top: 8%;
+  }
+
+  .contact p{
+    width: 80%;
+  }
+
+  .tidbit img{
+    width: 50%;
+  }
+
+  .tidbit__text{
+    width: 45%;
   }
 
 }
