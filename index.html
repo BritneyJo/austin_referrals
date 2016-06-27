@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>Austin Referral Splash Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="images/favicon.ico">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Fjalla+One|Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
 <section class="hero">
   <div class="hero__content">
     <img src="images/howdy.png" alt="howdy">
@@ -14,8 +16,8 @@
     <h2>get a referral fee!</h2>
     <img src="images/texas-state.png" alt="texas" id="texas">
   </div>
-
 </section>
+
 <section class="contact">
   <h3>Submit A Referral</h3>
   <h4>Fill out the form below or call us directly: <a href="tel:512-633-4650" id="phone">(512) 633-4650</a></h4>
@@ -30,32 +32,37 @@
     <input name="Client's Email" placeholder="Client's Email (optional)" type="email"></input>
     <textarea name="Details about Client" placeholder="Tell us about your client:" rows="8"></textarea>
     <button type="submit" class="orange_button">Submit</button>
-    <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+    <input type="hidden" name="_next" value="http://www.refertoaustin.com/thanks" />
     <input type="text" name="_gotcha" style="display:none" />
   </form>
 </section>
 
-`
 <section class="tidbits">
   <h3>About Austin</h3>
   <h4>What to know about the capitol of Texas</h4>
   <div class="tidbits__container">
     <div class="tidbit">
-      <img src="images/wework.jpg" alt="">
+      <div class="img_holder">
+        <img src="images/wework.jpg" alt="Downtown Austin">
+      </div>
       <div class="tidbit__text">
         <h5>Booming Economy</h5>
         <p>Austin has a booming economy with no signs of slowing. It was just ranked #1 Top American Boomtown by Bloomberg, has 22% GDP growth since 2008, and is the #1 Best City for jobs according to Forbes in 2013!</p>
       </div>
     </div>
     <div class="tidbit">
-      <img src="images/postcard.jpg" alt="">
+      <div class="img_holder">
+        <img src="images/postcard.jpg" alt="Austin Postcard">
+      </div>
       <div class="tidbit__text">
         <h5>Quality of Life</h5>
         <p>Austin has a very high quality of life. It is environmentally sound and healthy with plenty of outdoors between Townlake Jogging trail, Barton Springs Natural Pool, and a plethora of hillcountry hiking. </p>
       </div>
     </div>
     <div class="tidbit">
-      <img src="images/barton-springs.jpg" alt="">
+      <div class="img_holder">
+        <img src="images/barton-springs.jpg" alt="Barton Springs">
+      </div>
       <div class="tidbit__text">
         <h5>Family Friendly</h5>
         <p>Austin is a great place for people, young and old. Austin area high schools rank in US News top 500, #3 lowest violent crime rate in 2012, and ranked #2 best city to raise a family according to Parenting.com.</p>
@@ -132,7 +139,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="main.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>

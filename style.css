@@ -237,10 +237,28 @@ p{
   vertical-align: top;
 }
 
-.tidbit img{
-  width: 100%;
+.img_holder{
+  position: relative;
+  overflow: hidden;
+  width:100%;
   margin-bottom: 20px;
-  min-height: 350px;
+  height:250px;
+}
+
+
+@media (min-width: 1100px){
+  .img_holder{
+    height:350px;
+  }
+}
+
+.tidbit img{
+  position: absolute;
+  display: block;
+  height: 100%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  top:50%;
 }
 
 
@@ -267,8 +285,35 @@ footer{
   -webkit-filter: none;
 }
 
+.thanks{
+  text-align: center;
+  padding: 100px 30px;
+  width: 60%;
+  margin: 0 auto;
+}
+.thanks .icons{
+  margin-top: 15px;
+}
+.thanks .icons a{
+  display: inline-block;
+  margin: 0 15px;
+}
 
+.thanks .icons a:hover img{
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6);
+}
 
+.thanks #phone{
+  font-weight: bold;
+}
+.thanks .icons img{
+  height: 40px;
+}
+
+.thanks .orange_button{
+  margin:20px;
+}
 /*mobile*/
 
 
@@ -295,20 +340,20 @@ footer{
   .tidbit{
     width: 100%;
     display: block;
+    margin-bottom: 30px;
   }
 
-  .tidbit img{
-    width: 30%;
-    margin-bottom: 20px;
+  .img_holder{
     display: inline-block;
+    width:35%;
   }
+
 
   .tidbit__text{
     display: inline-block;
     width: 60%;
     vertical-align: top;
     margin-left: 20px;
-    margin-top: 15px;
   }
 
   form{
@@ -325,16 +370,25 @@ footer{
     top: 8%;
   }
 
+  .img_holder{
+    height:200px;
+  }
+
+  .tidbit img{
+    left:75%;
+  }
+  .tidbit__text{
+    width:55%;
+  }
+  .contact, .team{
+    padding: 30px 15px;
+  }
   .contact p{
     width: 80%;
   }
 
-  .tidbit img{
-    width: 50%;
-  }
-
-  .tidbit__text{
-    width: 45%;
+  .tidbits{
+    padding: 30px 0 1px;
   }
 
 }
